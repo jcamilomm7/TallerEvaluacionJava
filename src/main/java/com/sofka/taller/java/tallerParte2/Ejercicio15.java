@@ -1,7 +1,6 @@
 package com.sofka.taller.java.tallerParte2;
 
 public class Ejercicio15 {
-
     public static String mostrarMenu() {
         return "****** GESTION CINEMATOGRAFICA ******"
                 + "\n 1.  NUEVO ACTOR"
@@ -13,6 +12,5 @@ public class Ejercicio15 {
                 + "\n 7.  VER CATEGORIAS DE PELICULAS DE LOS ACTORES"
                 + "\n 8.  SALIR "
                 + "\nELIJA SU OPCION";
-
     }
 }

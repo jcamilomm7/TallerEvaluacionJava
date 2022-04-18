@@ -2,6 +2,7 @@ package com.sofka.taller.java.tallerParte1;
 
 public class Menu {
     public static String mostrarMenu() {
+
         return "MENU EJERCICIOS DEL TALLER DE JAVA"
                 + "\n 1.  Ejercicio 1"
                 + "\n 2.  Ejercicio 2"
