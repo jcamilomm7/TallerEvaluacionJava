@@ -1,6 +1,16 @@
 package com.sofka.taller.java.tallerParte1;
 
+/**
+ * Ejercicio 6 del taller evaluacion java
+ *
+ * @author JULIAN CAMILO MESA
+ */
 public class Ejercicio6 {
+
+    /**
+     * Este metodo no tiene argumentos, simplemente cuando se ejecuta muestra por consola dos columnas, una con los pares y
+     * otra con los impares que hay del 1 al 100  (Se utiliza el ciclo for)
+     */
     public static void mostrarNumerosParesEImpares() {
 
         int i;

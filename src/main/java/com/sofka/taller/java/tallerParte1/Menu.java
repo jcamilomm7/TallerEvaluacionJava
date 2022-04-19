@@ -1,6 +1,17 @@
 package com.sofka.taller.java.tallerParte1;
 
+/**
+ * Menu principal
+ *
+ * @author JULIAN CAMILO MESA
+ */
 public class Menu {
+
+    /**
+     * Este metodo despliega este menu por interaz grafica
+     *
+     * @return String : menu principal del aplicativo
+     */
     public static String mostrarMenu() {
 
         return "MENU EJERCICIOS DEL TALLER DE JAVA"

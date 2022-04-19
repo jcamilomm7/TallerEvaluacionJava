@@ -1,25 +1,30 @@
 package com.sofka.taller.java.tallerParte2;
 
+/**
+ * Ejercicio 14 del taller evaluacion java
+ *
+ * @author JULIAN CAMILO MESA
+ */
 public class Ejercicio14 {
-    public static void mostrarRangoNumeros(int numero) {
 
+    /**
+     * Este metodo despliega por consola todo los numeros que hay entre el argumento y el limit definido en una constante
+     *
+     * @param numeroIngresado
+     */
+    public static void mostrarRangoNumeros(int numeroIngresado) {
         final int limite = 1000;
 
-        System.out.println("---------Numeros--------");
-
-        if (numero < limite) {
-
-            while (numero <= 1000) {
-                System.out.println("\t\t\t" + numero);
-                numero += 2;
-            }
-        } else if (numero > limite) {
-
-            while (numero >= 1000) {
-
-                System.out.println("\t\t\t" + numero);
-                numero -= 2;
+        if (numeroIngresado > limite) {
+            while (numeroIngresado > limite) {
+                System.out.println(numeroIngresado);
+                numeroIngresado--;
             }
         }
+        while (numeroIngresado <= limite) {
+            System.out.println(numeroIngresado);
+            numeroIngresado++;
+        }
+
     }
 }

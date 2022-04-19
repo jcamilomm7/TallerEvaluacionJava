@@ -1,6 +1,18 @@
 package com.sofka.taller.java.tallerParte2;
 
+/**
+ * Ejercicio 11 del taller evaluacion java
+ *
+ * @author JULIAN CAMILO MESA
+ */
 public class Ejercicio11 {
+
+    /**
+     * Este metodo mide la longitud de una cadena de texto
+     *
+     * @param cadena
+     * @return String
+     */
     public static String devolverLongitudCadena(String cadena) {
 
         int longitud = cadena.length();
@@ -8,6 +20,12 @@ public class Ejercicio11 {
                 "\ntiene una longitud de: " + longitud + " caracteres, ";
     }
 
+    /**
+     * Este metodo mira cuantas vocales tiene una cadena de texto
+     *
+     * @param cadena
+     * @return String : numero de vocales en una cadena de texto
+     */
     public static String devolverNumeroVocales(String cadena) {
 
         int contador = 0;
