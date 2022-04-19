@@ -18,12 +18,12 @@ public class Ejercicio14 {
         if (numeroIngresado > limite) {
             while (numeroIngresado > limite) {
                 System.out.println(numeroIngresado);
-                numeroIngresado--;
+                numeroIngresado -= 2;
             }
         }
         while (numeroIngresado <= limite) {
             System.out.println(numeroIngresado);
-            numeroIngresado++;
+            numeroIngresado += 2;
         }
 
     }

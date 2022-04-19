@@ -11,7 +11,7 @@ public class Ejercicio8 {
      * Este metodo analiza si el dia ingresado es laboral o no es laboral
      *
      * @param dia
-     * @return String
+     * @return String : Mensaje de resultado
      */
     public static String verificarDialaboral(String dia) {
 

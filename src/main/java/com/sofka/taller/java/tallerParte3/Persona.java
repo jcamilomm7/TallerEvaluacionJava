@@ -188,13 +188,13 @@ public class Persona {
      * Metodo para proporcionar un DNI aleatorio a una persona
      */
     public void generarDNI() {
-        int numero = (int) (100000000 * Math.random());      //Se escoge un numero aleatorio, de esta cantidad de digitos
-        String juegoCaracteres = "TRWAGMYFPDXBNJZSQVHLCKE";  //Se crea una cadena de caracteres para poder sacar el dni
-        String numeroDNI = String.valueOf(numero);           //Se pasa el numero aleatorio a String
-        int modulo = numero % 23;                            //Para sacar el dni , se debe dividir el numero aleatorio /23 y el sobrante
-        //se analiza que posicion es de la cadena de caracteres, este sera la letra para el dni
+        int numero = (int) (100000000 * Math.random());      /*Se escoge un numero aleatorio, de esta cantidad de digitos*/
+        String juegoCaracteres = "TRWAGMYFPDXBNJZSQVHLCKE";  /*Se crea una cadena de caracteres para poder sacar el dni*/
+        String numeroDNI = String.valueOf(numero);           /*Se pasa el numero aleatorio a String*/
+        int modulo = numero % 23;                            /*Para sacar el dni , se debe dividir el numero aleatorio /23 y el sobrante
+                                                             se analiza que posicion es de la cadena de caracteres, este sera la letra para el dni*/
         char letra = juegoCaracteres.charAt(modulo);
-        this.dni = letra + numeroDNI;                        //Se concatena el numero dni convertido a string con la letra
+        this.dni = letra + numeroDNI;                        /*Se concatena el numero dni convertido a string con la letra*/
     }
 }
 

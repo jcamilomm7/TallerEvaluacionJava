@@ -92,10 +92,10 @@ public class Electrodomestico {
      * @return char: Letra de consumo energetico
      */
     private char comprobarConsumoEnergetico() {
-        String charToString = String.valueOf(this.consumoEnergetico); //Convertir un char en string
-        String charMinuscula = charToString.toLowerCase(); //Pasarla a minuscula
-        String cadena = "abcdef";          //Cadena de caracteres permitidas en el atributo consumo energetico,
-        //en caso de que no este , se colocara el valor por defecto
+        String charToString = String.valueOf(this.consumoEnergetico); /*Convertir un char en string*/
+        String charMinuscula = charToString.toLowerCase(); /*Pasarla a minuscula*/
+        String cadena = "abcdef";          /*Cadena de caracteres permitidas en el atributo consumo energetico,
+        en caso de que no este , se colocara el valor por defecto*/
         if (!cadena.contains(charMinuscula)) {
             this.consumoEnergetico = 'F';
         }
@@ -123,8 +123,8 @@ public class Electrodomestico {
     public double precioFinal() {
 
         char consumoEnergetico = this.comprobarConsumoEnergetico();
-        String charToString = String.valueOf(consumoEnergetico); //Pasar de un char a String
-        String charMayuscula = charToString.toUpperCase();   //Pasar a mayuscula
+        String charToString = String.valueOf(consumoEnergetico); /*Pasar de un char a String*/
+        String charMayuscula = charToString.toUpperCase();   /*Pasar a mayuscula*/
 
         switch (charMayuscula) {
 

@@ -65,6 +65,6 @@ public class Television extends Electrodomestico {
         if (this.resolucion > 40) {
             this.precioBase = this.precioBase + (this.precioBase * 0.3);
         }
-        return precioBase;   // se retorna el precioBase total , segun condiciones de la clase padre y de esta
+        return precioBase;   /*se retorna el precioBase total , segun condiciones de la clase padre y de esta*/
     }
 }

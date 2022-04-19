@@ -1,5 +1,11 @@
 package com.sofka.taller.java.tallerParte4;
 
+/**
+ * Ejercicio 18 del taller de evaluacion java
+ * Clase VideoJuego cuenta con algunos atributos , metodos propios y aparte implementa la interfaz Entregable
+ *
+ * @author JULIAN CAMILO MESA
+ */
 public class Videojuego implements Entregable {
 
     private String titulo;

@@ -127,8 +127,10 @@ public class Main {
                         JOptionPane.showMessageDialog(null, "La comparacion de las dos palabras arrojo lo siguiente \n" +
                                 Ejercicio12.compararPalabras(palabra1, palabra2) + "\n" +
                                 Ejercicio12.diferenciaPalabrasMayusculas(palabra1, palabra2) + "\n" +
-                                Ejercicio12.diferenciaPalabrasLongitud(palabra1, palabra2) + "\n"
+                                Ejercicio12.diferenciaPalabrasLongitud(palabra1, palabra2) + "\n" +
+                                Ejercicio12.diferenciaLetras(palabra1, palabra2)
                         );
+
                         break;
                     case 13:
                         JOptionPane.showMessageDialog(null, "Este programa muestra la fecha actual");
@@ -137,7 +139,7 @@ public class Main {
 
                     case 14:
                         JOptionPane.showMessageDialog(null, "Este programa solicita un numero y " +
-                                "este sera el limite inicial hasta 1000, todos estos numeros se listaran por consola");
+                                "este sera el limite inicial hasta llegar a 1000 de a 2 en 2, todos estos numeros se listaran por consola");
                         int numeroLimite = Integer.parseInt(JOptionPane.showInputDialog("Ingresar numero del limite inicial"));
                         JOptionPane.showMessageDialog(null, "Listado de numeros en el rango de: " +
                                 numeroLimite + " a " + 1000 + ", los cuales se visualizaran en la consola"
@@ -385,25 +387,12 @@ public class Main {
                                 "\n\nSerie con mayor numero de temporadas: \n" + objetosVistos.get(0) + "\n" +
                                 "\nVideojuego con mayor numero de horas estimadas: \n" + objetosVistos.get(1) + "\n"
                         );
-
-                        //Metodo compareTo para series
-                        if ((series[0].compareTo(series[1]) > 0)) {
-                            System.out.println("Si es mayor");
-                        } else {
-                            System.out.println("No es mayor");
-                        }
-
-                        //Metodo compareTo para videojuegos
-                        if ((videojuegos[0].compareTo(videojuegos[1]) > 0)) {
-                            System.out.println("Si es mayor");
-                        } else {
-                            System.out.println("No es mayor");
-                        }
-
                         break;
+
                     case 0:
                         JOptionPane.showMessageDialog(null, "HASTA PRONTO");
                         break;
+
                     default:
                         JOptionPane.showMessageDialog(null, "OPCION INVALIDA");
                         break;

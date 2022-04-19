@@ -1,6 +1,11 @@
 package com.sofka.taller.java.tallerParte4;
 
-//Esta interfaz sera implementada en las clases Serie y Videojuego
+/**
+ * Ejercicio 18 del taller de evaluacion java
+ * Interfaz en la cual se definen algunos metodos que seran implementados por la clase Serie y la clase Videojuego
+ *
+ * @author JULIAN CAMILO MESA
+ */
 public interface Entregable {
     void entregar();
     void devolver();

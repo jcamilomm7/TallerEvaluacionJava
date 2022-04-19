@@ -55,10 +55,10 @@ public class Lavadora extends Electrodomestico {
      * @return double : precioBase : Para poder calcular el precioBase se requiere de ciertas condiciones
      */
     public double precioFinal() {
-        super.precioFinal();  //invocamos el metodo precio final de la clase padre
+        super.precioFinal();  /*invocamos el metodo precio final de la clase padre*/
         if (this.carga > 30) {
             this.precioBase += 50;
         }
-        return this.precioBase; // se retorna el precioBase total , segun condiciones de la clase padre y de esta
+        return this.precioBase;  /*se retorna el precioBase total , segun condiciones de la clase padre y de esta*/
     }
 }

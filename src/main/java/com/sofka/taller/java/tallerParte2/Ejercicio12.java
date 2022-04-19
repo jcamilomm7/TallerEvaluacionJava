@@ -1,5 +1,11 @@
 package com.sofka.taller.java.tallerParte2;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.ArrayList;
+
+import static java.lang.String.valueOf;
+
 /**
  * Ejercicio 12 del taller evaluacion java
  *
@@ -50,5 +56,34 @@ public class Ejercicio12 {
         } else {
             return "\nUna  palabra de las  que ingresaron contiene mayusculas y la otra no";
         }
+    }
+
+    /**
+     * Este metodo determina las palabras en comun entre ambas palabras
+     *
+     * @param palabra1
+     * @param palabra2
+     * @return String : contiene las letras en comun
+     */
+    public static String diferenciaLetras(String palabra1, String palabra2) {
+        ArrayList<String> letrasIguales = new ArrayList<String>();
+        int n = 0;
+        for (int i = 0; i < palabra1.length(); i++) {
+            for (n = 0; n < palabra2.length(); n++) {
+                if (palabra1.charAt(i) == palabra2.charAt(n)) {
+                    String letrasIgualesString = valueOf(palabra1.charAt(i));
+                    letrasIguales.add(letrasIgualesString);
+                }
+            }
+            n = 0;
+        }
+        String cadena = "Las palabras tienen en comun las siguientes letras: \n";
+        if (letrasIguales.size() > 0) {
+            for (int i = 0; i < letrasIguales.size(); i++) {
+                cadena += letrasIguales.get(i) + "\n";
+            }
+            ;
+        }
+        return cadena;
     }
 }
